@@ -4,7 +4,7 @@ const accountRouter = require('./account')
 
 const router = express.Router();
 router.use("/user",userRouter);
-router.use('./account',accountRouter)
+router.use('/account',accountRouter)
 console.log("IN main indexj")
 
 module.exports = router
