@@ -49,6 +49,7 @@ userRouter.post('/signup', async(req,res) => {
     const token = jwt.sign({
         userId,
     },JWT_SECRET)
+    console.log(token)
     res.json({
         userId: userId,
         message: "User created successfully",
